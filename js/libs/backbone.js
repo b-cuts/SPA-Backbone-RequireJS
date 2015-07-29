@@ -4,6 +4,7 @@
 //     Backbone may be freely distributed under the MIT license.
 //     For all details and documentation:
 //     http://backbonejs.org
+//     I added a comment!
 
 (function(factory) {
 
@@ -118,6 +119,7 @@
 
   // An internal use `on` function, used to guard the `listening` argument from
   // the public API.
+  // and another one.
   var internalOn = function(obj, name, callback, context, listening) {
     obj._events = eventsApi(onApi, obj._events || {}, name, callback, {
         context: context,
