@@ -4,6 +4,7 @@
 //     Backbone may be freely distributed under the MIT license.
 //     For all details and documentation:
 //     http://backbonejs.org
+//     I added a comment!
 
 (function(factory) {
 
@@ -92,6 +93,7 @@
   // maps `{event: callback}`), reducing them by manipulating `memo`.
   // Passes a normalized single event name and callback, as well as any
   // optional `opts`.
+  // one more comment on line 96
   var eventsApi = function(iteratee, memo, name, callback, opts) {
     var i = 0, names;
     if (name && typeof name === 'object') {
@@ -118,6 +120,7 @@
 
   // An internal use `on` function, used to guard the `listening` argument from
   // the public API.
+  // and another one.
   var internalOn = function(obj, name, callback, context, listening) {
     obj._events = eventsApi(onApi, obj._events || {}, name, callback, {
         context: context,
